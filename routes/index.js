@@ -30,7 +30,7 @@ exports.index = function(req, res) {
 	var client = new Client();
 
 	// direct way
-	client.get("http://nodeserver10-ruchacmpe281.rhcloud.com", function(data,
+	client.get("http://gumball-saurabhd2511.rhcloud.com", function(data,
 			response) {
 
 		var count=data.countGumballs;
@@ -83,7 +83,7 @@ exports.GumballAction = function(req, res) {
 		var messagesToBePutInPost = [];
 		var Client = require('node-rest-client').Client;
 		var client = new Client();
-		client.get("http://nodeserver10-ruchacmpe281.rhcloud.com", function(data,
+		client.get("http://gumball-saurabhd2511.rhcloud.com", function(data,
 				response) {
 			var ar = {};
 
@@ -102,7 +102,7 @@ exports.GumballAction = function(req, res) {
 						"Content-Type" : "application/json"
 					}
 				};
-				client.put("http://nodeserver10-ruchacmpe281.rhcloud.com/gumball/1", args,
+				client.put("http://gumball-saurabhd2511.rhcloud.com/gumball/1", args,
 						function(data, response) {
 							// parsed response body as js object
 							console.log(data);
